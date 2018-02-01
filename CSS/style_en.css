@@ -97,6 +97,7 @@
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
+  -ms-background-size: cover;
   background-size: cover;  
   background-image: url("http://i.walmartimages.ca/img/mediative/Batiste/batiste-shampoo-hero-img.jpg");
 }
@@ -111,10 +112,12 @@
 @media screen and (max-width : 1000px){
   .md_videoWrapper {
     -webkit-flex-flow: column;
+    -ms-flex-flow: column;
     order: 1;
   } 
   .md_contentBlockWrapper{
     -webkit-flex-flow: column;
+    -ms-flex-flow: column;
   }
 
   .md_contentBlockWrapper :nth-child(1n){
@@ -130,6 +133,7 @@
   }
   .md_contentFullWidthWrapper{
     -webkit-flex-flow: column;
+    -ms-flex-flow:column;
   }
   .md_contentFullWidthImg{
     height: 0;
