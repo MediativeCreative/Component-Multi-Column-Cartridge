@@ -1,0 +1,70 @@
+	.zone{
+		width: 86% !important;
+	}
+	@media screen and (max-width : 640px) {
+		.zone{
+			width: 100% !important;
+		}
+	}
+
+.md_sectionTitle{
+  padding-top: 10px;
+  padding-bottom: 10px;
+  overflow: hidden;
+  color: #1267a4;
+  font-size: 25px;
+  margin-bottom: 15px;
+  font-weight: 500;
+  line-height: 2.8rem;
+}
+
+.md_sectionTitle:after{
+  content:"";
+  display: inline-block;
+  height: 0.3em;
+  vertical-align: bottom;
+  width: 100%;
+  margin-right: -100%;
+  margin-left: 10px;
+  border-top: 1px solid black;
+}
+
+.md_contentTitle{
+  color: #1267a4;
+  font-size: 20px;
+  font-weight: 800;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding: 15px 30px 10px 30px;
+}
+
+.md_contentCopy{
+  position: relative;
+  font-size: 14px;
+  line-height: 19px;
+  color: #333;
+  font-weight: 200;
+  padding: 0px 30px 30px 30px;
+}
+
+.md_contentCopy ul{
+  list-style-position: outside;
+  margin-bottom: 6px;
+  list-style: disc;
+}
+
+.md_contentCopy ul li{
+  margin-left: 20px;
+}
+
+.md_videoCopy{
+  position: relative;
+  background-color: #f6f6f6;
+  color: #1267a4;
+  font-size: 25px;
+  flex: 2;
+  text-align: center;
+  padding: 0 60px 0 60px;
+  line-height: 30px;
+  font-weight: bold;
+}
