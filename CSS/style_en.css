@@ -52,6 +52,22 @@
   background-color: #f6f6f6;
 }
 
+.md_videoCopy{
+  position: relative;
+  background-color: #f6f6f6;
+  color: #1267a4;
+  font-size: 25px;
+  flex: 2 1 0;
+  -webkit-flex: 2 1 0;
+  -moz-flex: 2 1 0;
+  -ms-flex: 2 1 0;
+  -o-flex: 2 1 0;  
+  text-align: center;
+  padding: 0 60px 0 60px;
+  line-height: 30px;
+  font-weight: bold;
+}
+
 .md_vidContainer{
   position: relative;
   width: 100%;
