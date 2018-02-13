@@ -22,12 +22,12 @@
   justify-content: space-between;
 }
 
-.md_contentBlockWrapper :nth-child(3n){
+.md_contentBlockWrapper :nth-child(2n){
   margin-right:0;
 }
 
 .md_contentBlock{
-  width: calc((100% / 3) - 1%);
+  width: calc((100% / 2) - 1%);
   position: relative;
   background-color: #f6f6f6;
   margin-bottom: 10px;
