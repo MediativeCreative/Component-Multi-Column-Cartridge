@@ -143,11 +143,11 @@ To make a Multi column design just copy and place this code:
   margin-top: 12px;
   justify-content: space-between;
 }
-.md_contentBlockWrapper :nth-child(2n){
+.md_contentBlockWrapper :nth-child(3n){
   margin-right:0;
 }
 .md_contentBlock{
-  width: calc((100% / 2) - 1%);
+  width: calc((100% / 3) - 1%);
   position: relative;
   background-color: #f6f6f6;
   margin-bottom: 10px;
@@ -173,6 +173,97 @@ To make a Multi column design just copy and place this code:
   }
 }
 ```
-- Image + Content
+**- Image + Content**
 
+To make a full width image and content design just copy and place this code:
 
+**HTML**
+
+```html
+<section class="md_container">
+  <div class="md_contentFullWidthWrapper">
+    <div class="md_contentFullWidthImg"></div>
+    <div class="md_contentFullWidthCopy">
+      <div class="md_contentTitle">Aliquam vel ullamcorper enim</div>
+      <div class="md_contentCopy">Aenean mollis interdum aliquam. Fusce elementum est sit amet tellus luctus interdum. Nullam at egestas sapien. Proin posuere augue in magna fermentum, sed dignissim ligula dapibus. Phasellus laoreet, elit ut facilisis cursus, velit justo vestibulum ipsum, non euismod eros ante eu tellus. Aenean mollis interdum aliquam. Fusce elementum est sit amet tellus luctus interdum. Nullam at egestas sapien. Proin posuere augue in magna fermentum, sed dignissim ligula dapibus. Phasellus laoreet, elit ut facilisis cursus, velit justo vestibulum ipsum, non euismod eros ante eu tellus. Aenean mollis interdum aliquam. Fusce elementum est sit amet tellus luctus interdum. Nullam at egestas sapien. Proin posuere augue in magna fermentum, sed dignissim ligula dapibus. Phasellus laoreet, elit ut facilisis cursus, velit justo vestibulum ipsum, non euismod eros ante eu tellus.</div>
+    </div>
+  </div>
+</section>
+```
+
+**CSS**
+
+```css
+.md_container{
+  width: 100%;
+  position: relative;
+}
+.md_contentFullWidthWrapper{
+  position: relative;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: -o-flex;
+  display: flex;
+  -webkit-flex-flow: row;
+  -moz-flex-flow: row;
+  -ms-flex-flow: row;
+  -o-flex-flow: row;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  background-color: #f6f6f6;
+}
+.md_contentFullWidthImg{
+  flex: 2 1 0;
+  -webkit-flex: 2 1 0;
+  -moz-flex: 2 1 0;
+  -ms-flex: 2 1 0;
+  -o-flex: 2 1 0;
+  width: 100%;
+  min-height: 200px;
+  background-repeat: no-repeat;
+  background-position: top center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  -ms-background-size: cover;
+  background-size: cover;  
+  background-image: url("http://i.walmartimages.ca/img/mediative/Batiste/batiste-shampoo-hero-img.jpg");
+}
+.md_contentFullWidthCopy{
+  flex: 2 1 0;
+  -webkit-flex: 2 1 0;
+  -moz-flex: 2 1 0;
+  -ms-flex: 2 1 0;
+  -o-flex: 2 1 0;
+  padding: 10px 0;
+}
+.md_contentTitle{
+  color: #1267a4;
+  font-size: 20px;
+  font-weight: 800;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding: 15px 30px 10px 30px;
+}
+.md_contentCopy{
+  position: relative;
+  font-size: 14px;
+  line-height: 19px;
+  color: #333;
+  font-weight: 200;
+  padding: 0px 30px 30px 30px;
+}
+@media screen and (max-width : 1000px){
+  .md_contentFullWidthWrapper{
+    -webkit-flex-flow: column;
+    -moz-flex-flow: column;
+    -ms-flex-flow: column;
+    -o-flex-flow: column;
+  }
+  .md_contentFullWidthImg{
+    height: 0;
+    padding-bottom: 56%;
+  }
+}
+```
